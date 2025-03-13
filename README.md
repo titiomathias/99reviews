@@ -14,9 +14,9 @@
 
 ## Stack:
 <ul>
-    <li>FastAPI</li>
-    <li>BeautifulSoup4</li>
-    <li>cfscrape</li>
+    <li><a href="https://fastapi.tiangolo.com">FastAPI</a></li>
+    <li><a href="https://beautiful-soup-4.readthedocs.io/en/latest/">BeautifulSoup4</li>
+    <li><a href="https://pypi.org/project/cfscrape/">cfscrape</li>
 </ul>
 
 
