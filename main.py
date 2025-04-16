@@ -3,7 +3,6 @@ import json
 import logging
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi import FastAPI, HTTPException, Request
 from scripts import request_site
@@ -31,7 +30,7 @@ def add_to_blacklist(ip_address):
 app = FastAPI(
     title="99reviews API",
     description="API para coletar e retornar reviews do 99freelas",
-    version="2.0.0",
+    version="2.0.1",
     docs_url=None,
     redoc_url=None,
     openapi_url=None,
@@ -67,12 +66,9 @@ async def check_blacklist(request: Request, call_next):
     return response
 
 
-app.add_middleware(HTTPSRedirectMiddleware)
-app.add_middleware(TrustedHostMiddleware, allowed_hosts=["www.matheusdealencar.com"], cache_headers=False, www_redirect=False)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
