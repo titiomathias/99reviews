@@ -3,3 +3,7 @@ cfscrape
 beautifulsoup4
 fastapi
 uvicorn
+slowapi
+os
+logging
+json
