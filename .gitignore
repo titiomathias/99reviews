@@ -1,5 +1,2 @@
 # Ignore .env
 .env
-
-# Ignore discloud config file
-discloud.config
