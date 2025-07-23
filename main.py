@@ -27,7 +27,12 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"99reviews": "Made by: github.com/titiomathias"}
+    return {
+        "API:": "99reviews API",
+        "description": "API para coletar e retornar reviews do 99freelas",
+        "author": "Made by: github.com/titiomathias",
+        "use": "https://matheusdealencar.com/"
+    }
 
 
 @app.post("/flag")
