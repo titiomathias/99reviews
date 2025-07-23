@@ -31,7 +31,7 @@ def read_root():
         "API:": "99reviews API",
         "description": "API para coletar e retornar reviews do 99freelas",
         "author": "Made by: github.com/titiomathias",
-        "use": "https://matheusdealencar.com/"
+        "in-use": "https://matheusdealencar.com/"
     }
 
 
